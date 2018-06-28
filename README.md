@@ -9,7 +9,7 @@ Install npm module
 <hr/>
 android/build.gradle
 
-<pre><code>// Top-level build file where you can add configuration options common to all sub-projects/modules.
+<pre><code>
 
 buildscript {
     repositories {
@@ -28,7 +28,8 @@ buildscript {
 
 android/gradle/wrapper/gradle-wrapper.properties
 
-<b>Change distributionUrl</b>
+Change distributionUrl
+
 <pre><code>distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
 zipStoreBase=GRADLE_USER_HOME

@@ -1,54 +1,64 @@
-# CzUIzqjDEN
 
-Install npm module
-<ol>
-<li><code>npm install react-native-maps --save</code></li>
-<li><code>react-native link react-native-maps</code></li>
-</ol>
+# react-native-tencentx5
 
-<hr/>
-android/build.gradle
+## Getting started
 
-<pre><code>
+`$ npm install react-native-tencentx5 --save`
 
-buildscript {
-    repositories {
-        jcenter()
-        google()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+### Link native dependencies
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
-</pre>
-<hr />
+From react-native 0.60 autolinking 
 
-android/gradle/wrapper/gradle-wrapper.properties
+`$ react-native link react-native-tencentx5`
 
-Change distributionUrl
 
-<pre><code>distributionBase=GRADLE_USER_HOME
-distributionPath=wrapper/dists
-zipStoreBase=GRADLE_USER_HOME
-zipStorePath=wrapper/dists
-distributionUrl=https\://services.gradle.org/distributions/gradle-4.1-all.zip
-</code></pre>
-<hr/>
+## Usage
+```javascript
+import { X5WebView } from 'react-native-tencentx5';
 
-android/app/build.gradle
+<X5WebView
+  url={"https://www.google.com"}
+  style={{ flex: 1 }}
+/>
+```
 
-<pre><code>android {
-  compileSdkVersion 25
-  buildToolsVersion "25.0.1"
-  ...
-  dependencies {
-    compile (project(':react-native-camera'))  <-- remove this
-    compile fileTree(dir: "libs", include: ["*.jar"])
-    compile "com.android.support:appcompat-v7:24.0.0" <--- v7:23.x.x change 24.0.0
-    compile "com.facebook.react:react-native:+"  // From node_modules
-    implementation project(':react-native-maps') <-- add this
-}
-</code></pre>
+## Props Index
+
+- source
+- style 
+- onPageStarted
+- onPageFinished
+- onReceivedTitle
+- onProgressChanged
+- onGoBack
+- [`onMessage`](README.md#onmessage)
+- javaScriptEnabled
+- domStorageEnabled
+- userAgent
+- cacheEnabled
+- textZoom
+- scalesPageToFit
+- applicationNameForUserAgent
+- allowFileAccessFromFileURLs
+- allowUniversalAccessFromFileURLs
+- mixedContentMode
+- allowFileAccess
+- geolocationEnabled
+---
+
+# Reference
+
+## Props
+
+### `onMessage`
+
+Function that is invoked when the webview calls `window.WebViewJavascriptBridge.postMessage`. Setting this property will inject this global into your webview.
+
+`window.WebViewJavascriptBridge.postMessage` accepts one argument, `data`, which will be available on the event object, `event.nativeEvent.data`. `data` must be a string.
+
+| Type     | Required |
+| -------- | -------- |
+| function | No       |
+
+
+---

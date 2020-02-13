@@ -32,11 +32,11 @@ import { WebView } from 'react-native-tencentx5';
 - onProgressChanged
 - onGoBack
 - [`onMessage`](README.md#onmessage)
-- javaScriptEnabled
-- domStorageEnabled
-- userAgent
-- cacheEnabled
-- textZoom
+- [`javaScriptEnabled`](README.md#javascriptenabled)
+- [`domStorageEnabled`](README.md#domstorageenabled)
+- [`userAgent`](README.md#useragent)
+- [`cacheEnabled`](README.md#cacheEnabled)
+- [`textZoom`](README.md#textZoom)
 - scalesPageToFit
 - applicationNameForUserAgent
 - allowFileAccessFromFileURLs
@@ -99,3 +99,51 @@ Function that is invoked when the webview calls `window.WebViewJavascriptBridge.
 
 
 ---
+
+### `javaScriptEnabled`
+
+Boolean value to enable JavaScript in the `WebView`.
+
+| Type | Required |
+| ---- | -------- |
+| bool | No       |
+
+---
+
+### `domStorageEnabled`
+
+Boolean value to control whether DOM Storage is enabled. Used only in Android.
+
+| Type | Required |
+| ---- | -------- |
+| bool | No       |
+
+---
+
+### `userAgent`
+
+Sets the user-agent for the `WebView`.
+
+| Type   | Required |
+| ------ | -------- |
+| string | No       |
+
+---
+
+### `cacheEnabled`
+
+Sets whether WebView should use browser caching.
+
+| Type    | Required |
+| ------- | -------- |
+| boolean | No       |
+
+---
+
+### `textZoom`
+
+If the user has set a custom font size in the Android system, an undesirable scale of the site interface in WebView occurs.
+
+| Type   | Required |
+| ------ | -------- |
+| number | No       |

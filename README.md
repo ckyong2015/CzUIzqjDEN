@@ -14,9 +14,9 @@ From react-native 0.60 autolinking
 
 ## Usage
 ```javascript
-import { X5WebView } from 'react-native-tencentx5';
+import { WebView } from 'react-native-tencentx5';
 
-<X5WebView
+<WebView
   url={"https://facebook.github.io/react-native"}
   style={{ flex: 1 }}
 />
@@ -61,7 +61,7 @@ Loads static URI in the WebView.
 Example:
 
 ```jsx
-<X5WebView
+<WebView
   url={'https://facebook.github.io/react-native'}
 />
 ```
@@ -70,7 +70,7 @@ Example:
 
 ### `style`
 
-A style object that allow you to customize the `X5WebView` style.
+A style object that allow you to customize the `WebView` style.
 
 | Type  | Required |
 | ----- | -------- |
@@ -79,7 +79,7 @@ A style object that allow you to customize the `X5WebView` style.
 Example:
 
 ```jsx
-<X5WebView
+<WebView
   source={{ uri: 'https://facebook.github.io/react-native' }}
   style={{ flex: 1 }}
 />

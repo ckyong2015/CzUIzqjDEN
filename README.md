@@ -17,14 +17,14 @@ From react-native 0.60 autolinking
 import { X5WebView } from 'react-native-tencentx5';
 
 <X5WebView
-  url={"https://www.google.com"}
+  url={"https://facebook.github.io/react-native"}
   style={{ flex: 1 }}
 />
 ```
 
 ## Props Index
 
-- source
+- [`url`](README.md#url)
 - style 
 - onPageStarted
 - onPageFinished
@@ -49,6 +49,44 @@ import { X5WebView } from 'react-native-tencentx5';
 # Reference
 
 ## Props
+
+### `url`
+
+Loads static URI in the WebView.
+
+| Type   | Required |
+| ------ | -------- |
+| string | No       |
+
+Example:
+
+```jsx
+<WebView
+  url={'https://facebook.github.io/react-native'}
+  style={{ flex: 1 }}
+/>
+```
+
+---
+
+### `style`
+
+A style object that allow you to customize the `WebView` style.
+
+| Type  | Required |
+| ----- | -------- |
+| style | No       |
+
+Example:
+
+```jsx
+<WebView
+  source={{ uri: 'https://facebook.github.io/react-native' }}
+  style={{ flex: 1 }}
+/>
+```
+
+---
 
 ### `onMessage`
 

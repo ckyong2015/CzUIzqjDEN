@@ -61,7 +61,7 @@ Loads static URI in the WebView.
 Example:
 
 ```jsx
-<WebView
+<X5WebView
   url={'https://facebook.github.io/react-native'}
 />
 ```
@@ -70,7 +70,7 @@ Example:
 
 ### `style`
 
-A style object that allow you to customize the `WebView` style.
+A style object that allow you to customize the `X5WebView` style.
 
 | Type  | Required |
 | ----- | -------- |
@@ -79,7 +79,7 @@ A style object that allow you to customize the `WebView` style.
 Example:
 
 ```jsx
-<WebView
+<X5WebView
   source={{ uri: 'https://facebook.github.io/react-native' }}
   style={{ flex: 1 }}
 />

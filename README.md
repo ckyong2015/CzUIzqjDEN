@@ -25,7 +25,7 @@ import { X5WebView } from 'react-native-tencentx5';
 ## Props Index
 
 - [`url`](README.md#url)
-- style 
+- [`style`](README.md#style)
 - onPageStarted
 - onPageFinished
 - onReceivedTitle
@@ -63,7 +63,6 @@ Example:
 ```jsx
 <WebView
   url={'https://facebook.github.io/react-native'}
-  style={{ flex: 1 }}
 />
 ```
 
